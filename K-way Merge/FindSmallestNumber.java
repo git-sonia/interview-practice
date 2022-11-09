@@ -16,7 +16,7 @@ class FindSmallestNumber {
     add each num from lists to min heap
     for k times pop from heap and add from respective list
       get list, add num from list to heap, inc ptr of list
-    runtime o(klog(k)), o(num lists)
+    runtime o(klog(num lists)), o(all nums)
     */
     Queue<Pair> minHeap = initializeHeap(lists);
     int[] ptrsOfNumsInHeap = new int[lists.size()];
