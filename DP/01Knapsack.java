@@ -5,7 +5,7 @@ public class Main{
       int[] profits = new int[capacity + 1];
       profits[0] = 0;
       for (int i = 0; i < values.size(); i++) {
-        for (int c = 1; c <= capacity; c++) {
+        for (int c = capacity; c >= 0; c--) { //iterate capacity backwards
           int weight = weights.get(i);
           int value = values.get(i);
           if (weight <= c) {
