@@ -9,7 +9,7 @@ public class Main{
           int weight = weights.get(i);
           int value = values.get(i);
           if (weight <= c) {
-            profits[c] = Math.max(profits[c], profits[c - weight] + value);
+            profits[c] = Math.max(profits[c], profits[c - weight] + value); //checking previous profit, but without current weight
           }
         }
       }
