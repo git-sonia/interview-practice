@@ -15,3 +15,7 @@ body {
 .accordion-icon--rotated {
   transform: translateY(2px) rotate(-135deg);
 }
+
+.hidden {
+  display: none;
+}

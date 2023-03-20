@@ -1,11 +1,16 @@
-
-let chevrons = document.querySelectorAll(".accordion");
+let accordions = document.querySelectorAll(".accordion");
 let paragraphs = document.querySelectorAll("p");
 
 function toggleParagraph() {
-    console.log("here");
+  if (this.classList.contains("html")) {
+    paragraphs[0].classList.toggle("hidden");
+  } else if (this.classList.contains("css")) {
+    paragraphs[1].classList.toggle("hidden");
+  } else if (this.classList.contains("js")) {
+    paragraphs[2].classList.toggle("hidden");
+  }
 }
 
-for (let chevron of chevrons) {
-    chevron.addEventListener("click", toggleParagraph);
+for (let accordion of accordions) {
+    accordion.addEventListener("click", toggleParagraph);
 }
